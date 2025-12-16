@@ -11,8 +11,9 @@
       --fg:#fff;
       --muted:rgba(255,255,255,.7);
 
-      --yellow:#FFD400;        /* District-Gelb */
-      --yellow-soft:rgba(255,212,0,.25);
+      /* 🔥 NEON GELB */
+      --yellow:#EFFF00;
+      --yellow-soft:rgba(239,255,0,.28);
 
       --card:rgba(255,255,255,.08);
       --line:rgba(255,255,255,.18);
@@ -46,13 +47,13 @@
       margin:0;
     }
 
-    /* Gelbe Akzentlinie unter Headline */
     .headline-accent{
       width:70px;
       height:4px;
       background:var(--yellow);
       margin:18px auto 22px;
       border-radius:4px;
+      box-shadow:0 0 18px rgba(239,255,0,.65);
     }
 
     p{
@@ -63,12 +64,12 @@
       line-height:1.55;
     }
 
-    /* Info Box – Phase 2 */
+    /* Phase-2 Info */
     .info-box{
       margin:0 auto 30px;
       padding:22px 24px;
       width:min(640px, 100%);
-      background:rgba(255,212,0,.06);
+      background:rgba(239,255,0,.06);
       border:1px solid var(--yellow-soft);
       border-left:5px solid var(--yellow);
       border-radius:var(--radius);
@@ -76,6 +77,7 @@
       font-weight:700;
       line-height:1.45;
       text-align:left;
+      box-shadow:0 0 28px rgba(239,255,0,.12);
     }
 
     .info-box strong{
@@ -83,6 +85,7 @@
       font-size:1.1em;
       margin-bottom:6px;
       color:var(--yellow);
+      text-shadow:0 0 12px rgba(239,255,0,.7);
     }
 
     /* Instagram Card */
@@ -102,7 +105,6 @@
       transition:transform .25s ease, border .25s ease, background .25s ease;
     }
 
-    /* gelber Mini-Akzent */
     .insta-card::before{
       content:"";
       position:absolute;
@@ -111,7 +113,7 @@
       width:100%;
       height:2px;
       background:var(--yellow);
-      opacity:.85;
+      box-shadow:0 0 14px rgba(239,255,0,.8);
     }
 
     .insta-card:hover{
@@ -132,6 +134,7 @@
       color:#000;
       font-size:20px;
       flex-shrink:0;
+      box-shadow:0 0 18px rgba(239,255,0,.8);
     }
 
     .insta-text{
@@ -153,6 +156,7 @@
       margin-left:auto;
       font-size:22px;
       color:var(--yellow);
+      text-shadow:0 0 12px rgba(239,255,0,.8);
     }
   </style>
 </head>
@@ -163,8 +167,11 @@
     <div class="headline-accent"></div>
 
     <p>
+      Aber keine Sorge...
+    </p>
+
     <div class="info-box">
-      <strong>Aber keine Sorge: In Kürze startet der Phase-2-Ticketverkauf.</strong>
+      <strong>In Kürze startet der Phase-2-Ticketverkauf.</strong>
       Wenn es Phase-2-Tickets gibt, wirst du auf unserem Instagram-Account darüber informiert.
     </div>
 
